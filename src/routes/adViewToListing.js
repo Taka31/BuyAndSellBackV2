@@ -1,7 +1,7 @@
 import { db } from "../database";
 
 export const AddViewToListingRoute = {
-    method:'GET',
+    method:'POST',
     path:'/api/listings/{id}/add-view',
     handler : async (req,h)=>{
         const id = req.params.id;
